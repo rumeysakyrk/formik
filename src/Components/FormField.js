@@ -5,13 +5,13 @@ import { Formik, Field, Form } from "formik";
 function FormField() {
   return (
     <div>
-      
-<h1>Contact Us</h1>
+
+      <h1>Contact Us</h1>
       <Formik
-        initialValues={{firstname: "", lastname: "", email: "" }}
+        initialValues={{ firstname: "", lastname: "", email: "" }}
 
         onSubmit={(values) => {
-          console.log(values);
+          console.log("values: ",values);
         }}
       >
         <Form>
